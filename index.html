@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KUA Mesuji Timur</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>KUA Mesuji Timur</h1>
+  </header>
+
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#profil">Profil</a>
+    <a href="#berita">Berita Terbaru</a>
+    <a href="#struktur">Struktur Pegawai</a>
+    <a href="#jadwal">Jadwal Binwin</a>
+    <a href="#ptsp">PTSP</a>
+    <a href="#video">Video Dokumenter</a>
+  </nav>
+
+  <section id="beranda">
+    <h2>Beranda</h2>
+    <p>Selamat datang di website KUA Mesuji Timur.</p>
+    <div class="slideshow-container">
+      <div class="slides fade">
+        <img src="https://i.imgur.com/MzT6C0F.jpg" class="slide-img" alt="Foto 1">
+        <div class="caption">Foto Bersama di Bawah Pohon</div>
+      </div>
+      <div class="slides fade">
+        <img src="https://i.imgur.com/qF1B28e.jpg" class="slide-img" alt="Foto 2">
+        <div class="caption">Tim KUA di Depan Kantor</div>
+      </div>
+      <div class="slides fade">
+        <img src="https://i.imgur.com/h0EfyYa.jpg" class="slide-img" alt="Foto 3">
+        <div class="caption">Semangat Kebersamaan Tim</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="profil">
+    <h2>Profil</h2>
+    <p>KUA Mesuji Timur merupakan lembaga di bawah Kementerian Agama yang melayani urusan keagamaan Islam di wilayah Mesuji Timur...</p>
+  </section>
+
+  <section id="berita">
+    <h2>Berita Terbaru</h2>
+    <p>(Berita akan ditampilkan di sini)</p>
+  </section>
+
+  <section id="struktur">
+    <h2>Struktur Pegawai</h2>
+    <p>(Data struktur organisasi akan ditampilkan di sini)</p>
+  </section>
+
+  <section id="jadwal">
+    <h2>Jadwal Bimbingan Perkawinan (Binwin)</h2>
+    <p>(Jadwal kegiatan Binwin akan ditampilkan di sini)</p>
+  </section>
+
+  <section id="ptsp">
+    <h2>Pelayanan Terpadu Satu Pintu (PTSP)</h2>
+    <div class="submenu">
+      <h3>Layanan Pengaduan</h3>
+      <p>(Form atau kontak pengaduan)</p>
+    </div>
+    <div class="submenu">
+      <h3>Layanan Aspirasi</h3>
+      <p>(Form atau kontak aspirasi masyarakat)</p>
+    </div>
+  </section>
+
+  <section id="video">
+    <h2>Video Dokumenter</h2>
+    <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 KUA Mesuji Timur</p>
+  </footer>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000);
+    }
+  </script>
+</body>
+</html>
